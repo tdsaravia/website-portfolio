@@ -4,7 +4,6 @@
   "private": true,
   "description": "my-gatsby-site",
   "author": "tobiisaravia",
-  "homepage": "https://tobii-saravia.github.io/website-portfolio",
   "keywords": [
     "gatsby"
   ],
@@ -14,7 +13,6 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "predeploy": "npm run build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
