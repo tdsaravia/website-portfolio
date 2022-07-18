@@ -4,6 +4,7 @@
   "private": true,
   "description": "my-gatsby-site",
   "author": "tobiisaravia",
+  "homepage": "https://tobii-saravia.github.io/website-portfolio",
   "keywords": [
     "gatsby"
   ],
@@ -12,11 +13,17 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.9.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.18.2",
+    "gatsby-plugin-image": "^2.18.1",
     "gatsby-plugin-manifest": "^4.18.1",
     "gatsby-plugin-react-helmet": "^5.18.0",
     "gatsby-plugin-sitemap": "^5.18.1",
@@ -24,6 +31,10 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-tabs": "^5.1.0",
     "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
