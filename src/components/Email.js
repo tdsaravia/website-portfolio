@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Side from './Side';
-import { colors } from '../styles/mixins'
+import { Colors } from '../styles/mixins'
 const Email = () => {
     const email = 'tttobis@gmail.com'
 
@@ -17,7 +17,7 @@ const Email = () => {
       width: 1px;
       height: 90px;
       margin: 0 auto;
-      background-color:${colors.grey};
+      background-color:${Colors.grey};
     }
   
     a {
@@ -28,11 +28,11 @@ const Email = () => {
       font-weight: 300;
       letter-spacing: 0.1em;
       writing-mode: vertical-rl;
-      color:${colors.grey};
+      color:${Colors.grey};
       &:hover,
       &:focus {
         transform: translateY(-3px);
-        color: ${colors.yellow}
+        color: ${Colors.yellow}
       }
     }
   `;

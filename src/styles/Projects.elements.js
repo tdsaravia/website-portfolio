@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from './mixins'
+import { Colors } from './mixins'
 
 export const Container = styled.div`
     justify-content: center;
@@ -8,8 +8,7 @@ export const Container = styled.div`
     width:100%;
     flex-direction: column;
     height:auto;
-    margin: 300px 0px 50px 0px;
-
+    padding: 70px 50px;
     @media screen and (max-width:768px) {
         margin: 100px 0px 50px 0px;
 
@@ -43,13 +42,13 @@ export const BottomContainer = styled.div`
 export const Section = styled.p`
     font-family: 'Inter', sans-serif;
     font-size: 32px;
-    color: ${colors.lightGrey};
+    color: ${Colors.lightGrey};
     margin-right: 20px;
     font-weight: 500;
 `
 export const Line = styled.div`
   height: 1px;
-  background: ${colors.lightGrey};
+  background: ${Colors.lightGrey};
   width:20%;
 `
 export const LeftContainer = styled.div`
@@ -94,7 +93,7 @@ export const RightContainer = styled.div`
 export const Title = styled.p`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-end;
 `
@@ -120,7 +119,7 @@ export const Box = styled.div`
 export const Description = styled.p`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-weight: 400;
     text-align: right;
 `
@@ -144,7 +143,7 @@ export const SkillsContainer = styled.div`
 export const Skills = styled.div`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-weight: 300;
     text-align:flex-end;
     margin-left: 20px;
@@ -170,7 +169,7 @@ export const Icon = styled.img`
 export const TitleReverse = styled.p`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-start;
 `
@@ -178,7 +177,7 @@ export const TitleReverse = styled.p`
 export const DescriptionReverse = styled.p`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-weight: 400;
     text-align: left;
 `
@@ -192,7 +191,7 @@ export const SkillsContainerReverse = styled.div`
 export const SkillsReverse = styled.div`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-weight: 300;
     text-align:flex-start;
     margin-right: 20px;

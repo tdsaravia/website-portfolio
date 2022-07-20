@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { colors } from './mixins'
+import { Colors } from './mixins'
 export const Container = styled.div`
   width: 100%;
   height: 88px;
-  max-width: 1600px;
+  max-width: 1300px;
 
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 1600px;
+  max-width: 1300px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -75,14 +75,14 @@ export const MenuItemLink = styled.a`
   align-items: center;
   height: 100%;
   padding: 0px 1.5rem;
-  color: ${colors.white};
+  color: ${Colors.white};
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
   transition: 0.3s all ease;
   font-family: 'Roboto Mono', sans-serif;
   &:hover {
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     transition: 0.5s all ease;
 
   }
@@ -155,14 +155,14 @@ export const MobileIcon = styled.div`
 `;
 
 export const Button = styled.button`
-    border: 2px solid ${colors.yellow};
+    border: 2px solid ${Colors.yellow};
     width:125px;
     height:49px;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 300;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     background-color: transparent;
     border-radius: 10px;
     font-size: 18px;
@@ -170,7 +170,7 @@ export const Button = styled.button`
     margin-left:60px;
 
     &:hover {
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     transition: 0.5s all ease;
     background-color: rgb(255,199,0,0.2);
   }

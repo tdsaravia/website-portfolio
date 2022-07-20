@@ -1,4 +1,4 @@
-export const colors = {
+export const Colors = {
     white: '#EEECE7',
     black: '#202020',
     lightGrey: '#C6C6C6',

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from './mixins'
+import { Colors } from './mixins'
 
 export const Container = styled.div`
     display: flex;
@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const RobotoText = styled.p`
     font-family: 'Roboto Mono', sans-serif;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     font-size: 18px;
     font-weight: 300;
     text-align: center;
@@ -21,7 +21,7 @@ export const RobotoText = styled.p`
 `
 export const Title = styled.p`
     font-family: 'Inter', sans-serif;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-size: 64px;
     font-weight: bold;
     text-align: center;
@@ -30,7 +30,7 @@ export const Title = styled.p`
 `
 export const InterText = styled.p`
     font-family: 'Inter', sans-serif;
-    color: ${colors.lightGrey};
+    color: ${Colors.lightGrey};
     font-size: 20px;
     font-weight: 300;
     text-align: center;
@@ -40,20 +40,20 @@ export const InterText = styled.p`
 `
 
 export const Button = styled.button`
-    border: 2px solid ${colors.yellow};
+    border: 2px solid ${Colors.yellow};
     width:165px;
     height:69px;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Mono', sans-serif;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     background-color: transparent;
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
     margin-top: 80px;
     &:hover {
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     transition: 0.5s all ease;
     background-color: rgb(255,199,0,0.2);
   }

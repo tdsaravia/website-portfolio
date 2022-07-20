@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../styles/mixins'
+import { Colors } from '../styles/mixins'
 
 const Container = styled.div`
     display:flex;
@@ -14,7 +14,7 @@ const Name = styled.p`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 16px;
     text-align: center;
-    color: ${colors.grey};
+    color: ${Colors.grey};
     margin-bottom: 60px; 
 `
 

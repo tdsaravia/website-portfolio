@@ -5,7 +5,9 @@ import {
     Section,
     Line,
     BottomContent,
-
+    Content,
+    LeftContent,
+    RightContent
 
 } from '../../styles/MyExperience.elements'
 import Tabs from '../Tabs'
@@ -22,13 +24,19 @@ const Experience = () => {
     return (
         <section ref={experienceRef} id='experienceContainer'>
         <Container>
+            <Content>
             <TopContent>
                 <Section>{content.subtitle}</Section>
                 <Line/>
             </TopContent>
             <BottomContent>
-                <Tabs/>
+                <LeftContent>
+                    <Tabs/>
+                </LeftContent>
+                <RightContent>
+                </RightContent>
             </BottomContent>
+            </Content>
         </Container>
         </section>
 

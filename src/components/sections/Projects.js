@@ -58,7 +58,9 @@ const Projects = () => {
 							<Skills>SASS</Skills>
 						</SkillsContainer>
 						<IconContainer>
-							<Icon src={gh} alt="github-icon"/>
+							<a href='https://github.com/tobii-saravia/bejamas-task'>
+								<Icon src={gh} alt="github-icon"/>
+							</a>
 						</IconContainer>
 					</RightContainer>
 				</BottomContainer>
@@ -77,7 +79,9 @@ const Projects = () => {
 
 						</SkillsContainerReverse>
 						<IconContainer>
-							<Icon src={gh} alt="github-icon"/>
+							<a href='https://github.com/tobii-saravia/weather-app'>
+								<Icon src={gh} alt="github-icon"/>
+							</a>
 						</IconContainer>
 					</LeftContainer>
 					<RightContainer>

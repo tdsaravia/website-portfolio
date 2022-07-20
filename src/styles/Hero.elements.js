@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { colors } from './mixins'
+import { Colors } from  './mixins.js'
 
 export const Container = styled.div`
     justify-content: center;
-    align-items: left;
+    align-items: center;
     display: flex;
     max-width: 1300px;
     width:100%;
@@ -16,26 +16,28 @@ export const Content = styled.div`
     max-height: 500px;
     padding:90px 0px;
     width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
     @media screen and (max-width:768px) {
         max-width:350px;
         padding:40px 0px;
-
     }
 `
 export const RobotoText = styled.p`
     font-family: 'Roboto Mono', sans-serif;
-    color: ${colors.yellow};
+    color: ${Colors.yellow};
     font-size: 18px;
     font-weight: 300;
     text-align: left;
     @media screen and (max-width:768px) {
         font-size: 16px;
-
     }
 `
 export const Title = styled.p`
     font-family: 'Inter', sans-serif;
-    color: ${colors.lightYellow};
+    color: ${Colors.lightYellow};
     font-size: 64px;
     font-weight: bold;
     text-align: left;
@@ -46,7 +48,7 @@ export const Title = styled.p`
 `
 export const Subtitle = styled.p`
     font-family: 'Inter', sans-serif;
-    color: ${colors.white};
+    color: ${Colors.white};
     font-size: 48px;
     font-weight: bold;
     text-align: left;
@@ -54,11 +56,10 @@ export const Subtitle = styled.p`
     @media screen and (max-width:768px) {
         font-size: 28px;
     }
-
 `
 export const InterText = styled.p`
     font-family: 'Inter', sans-serif;
-    color: ${colors.lightGrey};
+    color:${Colors.lightGrey};
     font-size: 20px;
     font-weight: 300;
     text-align: left;

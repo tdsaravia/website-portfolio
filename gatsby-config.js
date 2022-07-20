@@ -7,7 +7,7 @@ module.exports = {
   plugins: [ "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/icons/Logo.png"
     }
   }]
 };
