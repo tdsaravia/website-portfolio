@@ -1,24 +1,18 @@
 import styled from 'styled-components'
 import { Colors } from  './mixins.js'
 
-export const Container = styled.div`
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    max-width: 1300px;
-    width:100%;
-    height:80vh;
+export const HeroSection = styled.section`
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	padding-top: clamp(70px, 25vh, 220px);
+	box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+`;
 
-
-`
 export const Content = styled.div`
     max-width:650px;
-    max-height: 500px;
-    padding:90px 0px;
     width:100%;
     display: flex;
-    justify-content: center;
-    align-items: left;
     flex-direction: column;
     @media screen and (max-width:768px) {
         max-width:350px;
@@ -41,7 +35,6 @@ export const Title = styled.p`
     font-size: 64px;
     font-weight: bold;
     text-align: left;
-    margin-top:-10px;
     @media screen and (max-width:768px) {
         font-size: 32px;
     }
@@ -52,7 +45,6 @@ export const Subtitle = styled.p`
     font-size: 48px;
     font-weight: bold;
     text-align: left;
-    margin-top:-35px;
     @media screen and (max-width:768px) {
         font-size: 28px;
     }
@@ -63,7 +55,6 @@ export const InterText = styled.p`
     font-size: 20px;
     font-weight: 300;
     text-align: left;
-    margin-top:-10px;
     line-height: 36px;
     @media screen and (max-width:768px) {
         font-size: 18px;

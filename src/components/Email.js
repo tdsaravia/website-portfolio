@@ -10,7 +10,8 @@ const Email = () => {
     flex-direction: column;
     align-items: center;
     position: relative;
-
+    z-index: 999;
+    background-color: transparent;
     &:after {
       content: '';
       display: block;
@@ -29,6 +30,8 @@ const Email = () => {
       letter-spacing: 0.1em;
       writing-mode: vertical-rl;
       color:${Colors.grey};
+      background-color: transparent;
+
       &:hover,
       &:focus {
         transform: translateY(-3px);
@@ -43,6 +46,7 @@ const Email = () => {
             <a href={`mailto:${email}`}>{email}</a>
         </StyledLinkWrapper>
     </Side>
+
     )
 };
 

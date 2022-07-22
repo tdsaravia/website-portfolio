@@ -14,7 +14,34 @@ export const Container = styled.div`
 
     }
 `
+export const ContentRow = styled.div`
+display: flex;
+margin: 30px -15px 15px -30px;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+@media screen and (max-width: 768px) {
+    flex-direction: column;
+}
+`;
 
+export const ContentColumn = styled.div`
+margin-bottom: 15px;
+padding-right: 30px;
+padding-left: 30px;
+flex: 1;
+z-index: 0;
+display: flex;
+flex-direction: column;
+@media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+`;
 export const TopContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
@@ -57,6 +84,7 @@ export const LeftContainer = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width:49%;
+    max-width:600px;
     flex-direction: column;
     @media screen and (max-width:768px) {
         width:100%;
@@ -68,11 +96,13 @@ export const ImageContainer = styled.div`
     display:flex;
     justify-content:center;
     width:100%;
+    max-width:600px;
 `
 export const Image = styled.img`
     max-width:600px;
     height: auto;
     position:relative;
+    width:100%;
     @media screen and (max-width:768px) {
         display: none;
 }
@@ -83,6 +113,8 @@ export const RightContainer = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     width:49%;
+    max-width:600px;
+
     @media screen and (max-width:768px) {
         width:100%;
         justify-content: center;
@@ -96,6 +128,11 @@ export const Title = styled.p`
     color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-end;
+    padding: 20px 0px;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+
+    }
 `
 export const Box = styled.div`
     display: flex;
@@ -112,7 +149,7 @@ export const Box = styled.div`
         justify-content: center;
         align-items: center;
         max-width:300px;
-        max-height:350px;
+        max-height:550px;
 }
 `
 
@@ -122,6 +159,11 @@ export const Description = styled.p`
     color: ${Colors.white};
     font-weight: 400;
     text-align: right;
+    background-color: #373737;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+
+    }
 `
 export const SkillsContainer = styled.div`
     display: flex;
@@ -142,7 +184,7 @@ export const SkillsContainer = styled.div`
 `
 export const Skills = styled.div`
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     color: ${Colors.white};
     font-weight: 300;
     text-align:flex-end;
@@ -172,6 +214,11 @@ export const TitleReverse = styled.p`
     color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-start;
+    padding: 20px 0px;
+
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
 `
 
 export const DescriptionReverse = styled.p`
@@ -180,6 +227,10 @@ export const DescriptionReverse = styled.p`
     color: ${Colors.white};
     font-weight: 400;
     text-align: left;
+    background-color: #373737;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
 `
 export const SkillsContainerReverse = styled.div`
     display: flex;
@@ -187,13 +238,36 @@ export const SkillsContainerReverse = styled.div`
     justify-content: flex-start;
     align-items: center;
     width:100%;
+    @media screen and (max-width:768px) {
+        justify-content:center;
+    }
 `
 export const SkillsReverse = styled.div`
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     color: ${Colors.white};
     font-weight: 300;
     text-align:flex-start;
     margin-right: 20px;
     margin:15px 20px 15px 0px;
+
+    @media screen and (max-width:768px) {
+        text-align:center;
+    }
+`
+
+export const CoomingSoon = styled.p`
+    font-size: 3rem;
+    color:#000;
+    position:absolute; 
+    background-color:transparent; 
+    top:40%;
+    justify-content:center; 
+    align-items:center;
+    font-family:'Inter', sans-serif;
+    font-weight:bold;
+
+    @media screen and (max-width:960px) {
+        display: none;
+    }
 `

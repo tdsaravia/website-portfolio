@@ -1,19 +1,20 @@
 import React from 'react'
 import {
-    Container,
     TopContent,
     Section,
     Line,
-    BottomContent,
-    LeftContent,
+    ContentRow,
     Paragraph,
-    RightContent,
     Image,
     ImageContainer,
+    ContentColumn,
     List
 } from '../../styles/About.elements'
 import Profile from '../../images/profile.svg'
 import { useNav } from '../hooks/useNav'
+import { Container } from '../../GlobalStyle'
+
+
 
 const content = {
     subtitle: 'About Me',
@@ -22,11 +23,13 @@ const content = {
 }
 const skills = ['TypeScript', 'JavaScript (ES6+)', 'React', 'Gatsby', 'Node.js', 'Next.js', 'React Native', 'Firebase'];
 
+
+
+
 const About = () => {
     
-	const aboutRef = useNav('About');
-
-
+    const aboutRef = useNav('About');
+    
     return (
         <section ref={aboutRef} id='aboutContainer'>
         <Container>
@@ -34,8 +37,8 @@ const About = () => {
                 <Section>{content.subtitle}</Section>
                 <Line/>
             </TopContent>
-            <BottomContent>
-                <LeftContent>
+            <ContentRow>
+                <ContentColumn>
                     <Paragraph>
                         {content.p1}
                     </Paragraph>
@@ -45,13 +48,13 @@ const About = () => {
                     <List>
                         {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
                     </List>
-                </LeftContent>
-                <RightContent>
+                </ContentColumn>
+                <ContentColumn>
                     <ImageContainer>
                     <Image src={Profile} alt="profile"/>
                     </ImageContainer>
-                </RightContent>
-            </BottomContent>
+                </ContentColumn>
+            </ContentRow>
         </Container>
         </section>
     )

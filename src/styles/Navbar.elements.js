@@ -1,24 +1,25 @@
 import styled from "styled-components";
 import { Colors } from './mixins'
-export const Container = styled.div`
-  width: 100%;
-  height: 88px;
-  max-width: 1300px;
+import { Container } from '../GlobalStyle'
 
+export const Nav = styled.div`
+	background: transparent;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+	width: 100%;
 `;
 
-export const Wrapper = styled.div`
-  width: 100%;
-  max-width: 1300px;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 3.5rem;
-
-  @media screen and (max-width:768px) {
-    padding: 0rem;
-  }
+export const Wrapper = styled(Container)`
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	${Container}
 `;
 
 export const LogoContainer = styled.div`
@@ -174,7 +175,11 @@ export const Button = styled.button`
     transition: 0.5s all ease;
     background-color: rgb(255,199,0,0.2);
   }
-
+  a {
+      text-decoration:none;
+      background-color: transparent;
+      color: ${Colors.yellow};
+  }
   @media screen and (max-width: 960px) {
     margin-left:0px;
   }
@@ -183,5 +188,4 @@ export const Button = styled.button`
 export const Img = styled.img`
   width:35px;
   height:35px;
-  margin-right:30px;
 `

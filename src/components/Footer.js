@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Colors } from '../styles/mixins'
+import { Container } from '../GlobalStyle'
 
-const Container = styled.div`
+const Content = styled.div`
     display:flex;
     align-items: center;
     width:100%;
@@ -21,9 +22,11 @@ const Name = styled.p`
 const Footer = () => {
     return (
         <Container>
-            <Name>
-                Tobias Saravia
-            </Name>
+            <Content>
+                <Name>
+                    Tobias Saravia
+                </Name>
+            </Content>
         </Container>
     )
 }

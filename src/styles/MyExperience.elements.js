@@ -1,25 +1,13 @@
 import styled from 'styled-components'
 import { Colors } from './mixins'
 
-export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (max-width:768px) {
-        margin: 50px 370px;
-        align-items: center;
-        max-width: 380px;
-    }
- `
-export const Content = styled.div`
-
-`
 export const TopContent = styled.div`
     flex-direction: row;
     display:flex;
     justify-content: flex-start;
     align-items: center;
     width:100%;
+    padding: 50px 0;
     @media screen and (max-width:768px) {
         max-width: 350px;
 
@@ -52,7 +40,34 @@ export const BottomContent = styled.div`
         width:100%;
     }
 `
+export const ContentRow = styled.div`
+display: flex;
+margin: 0 -15px 15px -30px;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+@media screen and (max-width: 768px) {
+    flex-direction: column;
+}
+`;
 
+export const ContentColumn = styled.div`
+margin-bottom: 15px;
+padding-right: 30px;
+padding-left: 30px;
+flex: 1;
+z-index: 0;
+display: flex;
+flex-direction: column;
+@media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+`;
 export const RightContent = styled.div`
     display:flex;
     flex-direction:column;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Container,
+    HeroSection,
     Content,
     InterText,
     RobotoText,
@@ -8,6 +8,8 @@ import {
     Subtitle
 } from '../../styles/Hero.elements'
 import { useNav } from '../hooks/useNav'
+import { Container } from '../../GlobalStyle'
+
 const content = {
     hi: 'Hi, my name is',
     title: 'Tobias Saravia',
@@ -20,7 +22,7 @@ const Hero = () => {
     const homeRef = useNav('Hero');
 
     return (
-        <section ref={homeRef} id='heroContainer'>
+        <HeroSection ref={homeRef} id='heroContainer'>
             <Container>
                 <Content>
                 <RobotoText>{content.hi}</RobotoText>
@@ -29,7 +31,7 @@ const Hero = () => {
                 <InterText>{content.text}</InterText>
                 </Content>
             </Container>
-        </section>
+        </HeroSection>
     )
 }
 

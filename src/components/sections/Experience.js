@@ -1,18 +1,14 @@
 import React from 'react'
 import {
-    Container,
     TopContent,
     Section,
     Line,
-    BottomContent,
-    Content,
-    LeftContent,
-    RightContent
-
+    ContentRow,
+    ContentColumn
 } from '../../styles/MyExperience.elements'
 import Tabs from '../Tabs'
 import { useNav } from '../hooks/useNav'
-
+import { Container } from '../../GlobalStyle'
 
 const content = {
     subtitle: 'My Experience'
@@ -24,19 +20,15 @@ const Experience = () => {
     return (
         <section ref={experienceRef} id='experienceContainer'>
         <Container>
-            <Content>
             <TopContent>
                 <Section>{content.subtitle}</Section>
                 <Line/>
             </TopContent>
-            <BottomContent>
-                <LeftContent>
+            <ContentRow>
+                <ContentColumn>
                     <Tabs/>
-                </LeftContent>
-                <RightContent>
-                </RightContent>
-            </BottomContent>
-            </Content>
+                </ContentColumn>
+            </ContentRow>
         </Container>
         </section>
 

@@ -27,7 +27,7 @@ const TabJobs = () => {
         <Tabs>
         <TabList>
           <Tab>
-            <p>Remigo, LLC</p>
+            <p>Remigo</p>
           </Tab>
           <Tab>
             <p>HOKALI</p>

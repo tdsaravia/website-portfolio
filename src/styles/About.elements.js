@@ -1,20 +1,35 @@
 import styled from 'styled-components'
 import { Colors } from './mixins'
 
-export const Container = styled.div`
-    justify-content: center;
-    display: flex;
-    max-width: 1300px;
-    width:100%;
+
+export const ContentRow = styled.div`
+display: flex;
+margin: 0 -15px 15px -30px;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+@media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 70px 50px;
+}
+`;
+
+export const ContentColumn = styled.div`
+margin-bottom: 15px;
+padding-right: 30px;
+padding-left: 30px;
+flex: 1;
+z-index: 0;
+display: flex;
+flex-direction: column;
+@media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    flex-basis: 100%;
+    justify-content: center;
     align-items: center;
-    @media screen and (max-width:768px) {
-        padding: 0px 400px;
-        max-width:350px;
-        align-items: center;
-    }
- `
+    padding: 30px;
+}
+`;
 
 export const TopContent = styled.div`
     flex-direction: row;
@@ -22,7 +37,8 @@ export const TopContent = styled.div`
     align-items: center;
     justify-content: flex-start;
     width:100%;
-    max-width:1000px;
+    max-width:1300px;
+    
     @media screen and (max-width:768px) {
         max-width: 400px;
     }
@@ -41,31 +57,6 @@ export const Line = styled.div`
   width:20%;
 `
 
-export const BottomContent = styled.div`
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    max-width:1000px;
-    @media screen and (max-width:768px) {
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        max-width: 400px;
-    }
-`
-
-export const LeftContent = styled.div`
-    display:flex;
-    flex-direction:column;
-    max-width:500px;
-    align-items: flex-start;
-    width:50%;
-    @media screen and (max-width:768px) {
-        width:100%;
-        justify-content: center;
-    }
-`
 
 export const Paragraph = styled.p`
     font-family: 'Inter', sans-serif;
@@ -76,18 +67,7 @@ export const Paragraph = styled.p`
     line-height: 36px;
 `
 
-export const RightContent = styled.div`
-    display:flex;
-    flex-direction:column;
-    max-width:600px;
-    align-items: center;
-    width:50%;
-    @media screen and (max-width:768px) {
-        margin:80px 0px;
-        width:100%;
-        justify-content: center;
-    }
-`
+
 export const ImageContainer = styled.div`
     width:300px;
     height:300px;
@@ -95,6 +75,10 @@ export const ImageContainer = styled.div`
     border: 2px solid ${Colors.yellow};
     background-color: ${Colors.black};
     z-index: -1;
+    margin-left: 200px;
+    @media screen and (max-width:960px) {
+        margin-left: 0;
+    }
 `
 export const Image = styled.img`
     width:300px;
@@ -112,7 +96,7 @@ export const List = styled.div`
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 10px 0;
     overflow: hidden;
     list-style: none;
     color:${Colors.lightGrey};

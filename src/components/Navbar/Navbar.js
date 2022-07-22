@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  Container,
+  Nav,
   LogoContainer,
   Wrapper,
   Menu,
@@ -16,12 +16,12 @@ import NavLink from './NavLink'
 import { navLinks } from './navLinks';
 
 
-
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <Container>
+    <>
+    <Nav>
       <Wrapper>
           <LogoContainer>
               <img src={Logo} alt="logo" />
@@ -38,11 +38,17 @@ const Navbar = () => {
               </MenuItem>
             ))}
             <MenuItem>
-                <Button>Resume</Button>
+                <Button>
+                  <a href="https://drive.google.com/file/d/1FtUTP0BVnOnsLKUMEs9j143KNep7HZAz/view?usp=sharing" rel="noreferrer" target="_blank">
+                    Resume
+                  </a>
+                </Button>
             </MenuItem>
           </Menu>
       </Wrapper>
-    </Container>
+    </Nav>
+
+    </>
   );
 };
 

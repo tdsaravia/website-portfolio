@@ -2,27 +2,24 @@
   .react-tabs {
     display: flex;
     margin-left: 36px;
-    width: 550px;
+    width: 400px;
     height: auto;
     color: #EEECE7;
-    background: #202020;
-
   }
   
   .react-tabs__tab-list {
     display: flex;
     flex-direction: column;
-    width: 170px;
+    width: 250px;
     margin: 0;
     padding: 0;
     color: #EEECE7;
-    background: #202020;
   }
   
   .react-tabs__tab {
     height: 35px;
     list-style: none;
-    padding: 12px 0px;
+    padding: 22px 90px;
     cursor: pointer;
     color: #9A9A9A;
     font-family: 'Roboto Mono', sans-serif;
@@ -30,7 +27,6 @@
   }
   
   .react-tabs__tab--selected {
-    background: #202020;
     border-color: #202020;
     border-left: 2px solid #FFC700;
     color: #FFC700;
@@ -39,7 +35,7 @@
   
   .react-tabs__tab-panel {
     display: none;
-    width: 300px;
+    width: 600px;
   }
   
   .react-tabs__tab-panel--selected {
@@ -56,7 +52,7 @@
   
   .panel-content {
     text-align: left;
-    max-width:550px;
+    max-width:750px;
   }
 
 .date {
@@ -114,22 +110,23 @@
     font-size: 16px;
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:960px) {
     .react-tabs {
       margin-left: 0px;
+      max-width:400px;
+      padding:0px 30px;
     }
     .react-tabs__tab-list {
       display: flex;
       flex-direction: row;
-      width: 100px;
-      margin: 0;
-      padding: 0;
-      color: #EEECE7;
-      background: #202020;
+      width: 200px;
+      padding: 30px 0;
     }
     .react-tabs__tab {
       border-bottom: 2px solid #9A9A9A;
       border-left: none;
+      padding: 30px 40px;
+      height: 35px;
 
     }
     .react-tabs__tab--selected  {
@@ -138,13 +135,15 @@
     }
     .react-tabs {
       flex-direction: column;
-      max-width: 450px;
       width:100%;
       font-size: 12px;
     }
+    .react-tabs__tab-panel {
+      max-width: 400px;
+    }
     .list-tab {
       grid-template-columns: repeat(1, minmax(140px, 350px));
-
+      max-width:400px;
   }
   .title h2 {
     font-size: 22px;
