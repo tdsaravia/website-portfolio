@@ -177,8 +177,8 @@ export const SkillsContainer = styled.div`
         justify-content: center;
         align-items: center;
         max-width:300px;
-        grid-template-columns: repeat(2, minmax(140px, 200px));
-
+        height:50px;
+        flex-wrap: flex;
 }
     
 `
@@ -194,7 +194,6 @@ export const Skills = styled.div`
         justify-content: center;
         align-items: center;
         max-width:300px;
-        grid-template-columns: repeat(2, minmax(140px, 200px));
 
 }
 `

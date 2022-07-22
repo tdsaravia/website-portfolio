@@ -24,6 +24,8 @@ import {
 } from '../../styles/Projects.elements.js'
 import project1 from '../../images/e-commerce.svg'
 import project2 from '../../images/weather.svg'
+import project3 from '../../images/project3.svg'
+
 import gh from '../../images/icons/Github.png'
 import { Container } from '../../GlobalStyle.js'
 
@@ -96,7 +98,7 @@ const Projects = () => {
 				<ContentRow>
 				<LeftContainer>
 					<ImageContainer>
-						<Image src={project1} alt="e-commerce"/>
+						<Image src={project3} alt="e-commerce"/>
 						<CoomingSoon>Cooming Soon!</CoomingSoon>
 
 					</ImageContainer>

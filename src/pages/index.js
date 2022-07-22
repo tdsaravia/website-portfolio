@@ -5,6 +5,7 @@ import GlobalStyle from '../GlobalStyle.js'
 import Social from '../components/Social'
 // markup
 const IndexPage = () => {
+
   return (
     <>
       <GlobalStyle/>

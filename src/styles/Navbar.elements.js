@@ -41,7 +41,7 @@ export const Menu = styled.ul`
   padding: 0.5rem 0rem;
 
   @media screen and (max-width: 960px) {
-    background-color: #2D2D2D;
+    background-color: #202020;
     position: absolute;
     top: 80px;
     left: ${({ open }) => (open ? "0%" : "-100%")};
@@ -82,6 +82,7 @@ export const MenuItemLink = styled.a`
   cursor: pointer;
   transition: 0.3s all ease;
   font-family: 'Roboto Mono', sans-serif;
+  background-color: transparent;
   &:hover {
     color: ${Colors.yellow};
     transition: 0.5s all ease;

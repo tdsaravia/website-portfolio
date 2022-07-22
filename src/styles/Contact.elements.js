@@ -17,6 +17,10 @@ export const RobotoText = styled.p`
     font-weight: 300;
     text-align: center;
     margin-top: 50px;
+
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
 `
 export const Title = styled.p`
     font-family: 'Inter', sans-serif;
@@ -24,6 +28,10 @@ export const Title = styled.p`
     font-size: 64px;
     font-weight: bold;
     text-align: center;
+
+    @media screen and (max-width:768px) {
+        font-size: 48px;
+    }
 
 `
 export const InterText = styled.p`
@@ -34,6 +42,9 @@ export const InterText = styled.p`
     text-align: center;
     line-height: 36px;
     max-width:700px;
+    @media screen and (max-width:768px) {
+        font-size: 18px;
+    }
 `
 
 export const Button = styled.button`
