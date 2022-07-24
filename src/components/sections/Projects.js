@@ -52,7 +52,7 @@ const Projects = () => {
 						<Title>E-commerce Website</Title>
 						<Box>
 							<Description>
-							An e-commerce pictures. It’s a web app where you can filter and sort the images that you want, and add the pics in your cart to buy it.
+							An e-commerce for pictures. It’s a web app where you can filter and sort the images that you want, and add the pics to your cart to buy them.
 							</Description>
 						</Box>
 						<SkillsContainer>
@@ -74,12 +74,12 @@ const Projects = () => {
 						<TitleReverse>Weather Website</TitleReverse>
 						<Box>
 							<DescriptionReverse>
-								A weather app where you can search the weather of the week from one city
+									A weather app where you can find what the weather will be for the week for a given city.
 							</DescriptionReverse>
 						</Box>
 						<SkillsContainerReverse>
 							<SkillsReverse>JavaScript</SkillsReverse>
-							<SkillsReverse>Openweathermap</SkillsReverse>
+							<SkillsReverse>OpenWeatherMap</SkillsReverse>
 							<SkillsReverse>SASS</SkillsReverse>
 
 						</SkillsContainerReverse>
@@ -107,7 +107,7 @@ const Projects = () => {
 					<Title>E-commerce Design</Title>
 					<Box>
 						<Description>
-						This is a design for desktop. It is an e-commerce developed the front end section, where you can use the carrousel, add objects to the cart and see the purchases.
+							This is a design for desktop. It is the frontend for an e-commerce, where you can use a carrousel, add objects to the cart and see the cart’s details.
 						</Description>
 					</Box>
 					<SkillsContainer>

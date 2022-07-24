@@ -1,8 +1,7 @@
 module.exports = {
-  pathPrefix: "/website-portfolio",
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `My Website Porftolio`,
+    siteUrl: `https://tobii-saravia.github.io`,
   },
   plugins: [ "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',

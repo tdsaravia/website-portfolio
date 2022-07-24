@@ -4,22 +4,22 @@ import '../styles/tabs.css'
 
 
 const remigo = [
-    'Remigo is a Real Estate startup whose main mission was to facilitate communication between the buyer and the REALTOR through a live chat. It also facilitates the search for properties according to what the client wants thanks to the mls search that it offers, where all the data of the properties found in Austin, TX are displayed.',
-    'Developed a Landing Page website with React Gatsby, also in new features, and bug fixing for the principal Web App.',
-    'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness',
-    'Work with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Gatsby, React, Next.js, Terraform, GraphQL, Figma, and Netlify',
+    'Remigo is a Real Estate startup whose main mission was to facilitate communication between the buyer and the REALTOR through a live chat. It also facilitates the search for properties according to what the client wants thanks to the MLS data search that it offers, where all the data of the properties found in Austin, TX are displayed.',
+    'I developed a landing page with React (by using Gatsby). I also implemented new features and worked on fixing bugs for the main website.',
+    'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.',
+    'Worked with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Gatsby, React, Next.js, Terraform, GraphQL, Figma, and Netlify.',
 ]
 const hokali = [
-    "HOKALI is a online platform that simplifies the process of booking sports lessons and fitness sessions and their mainly sport is Surfing, providing a full learning experience for adults and kids. Their main location is in San Francisco, but they also stay in Los Angeles, San Diego, Jacksonville and Oahu",
-    "I Developed a Forecast web app using React, Firebase and API's(open wheater map and stormglass).",
-    'I Developed in the Landing Page made with React, fixing bugs and implementing activeCampaing API for subscriptions to Newsletters',
-    'Had weekly meetings with my team where we gave our updates and future tasks to be done'
+    "HOKALI is an online platform that simplifies the process of booking sports lessons and fitness sessions. Their main sport is Surfing, providing a full learning experience for adults and kids. They mainly operate in San Francisco, but they also work in Los Angeles, San Diego, Jacksonville and Oahu.",
+    "I developed a forecast web app using React, Firebase and the following APIs: OpenWeatherMap and Storm Glass.",
+    'I developed a landing page with React, fixed bugs and used the ActiveCampaign API for subscriptions to newsletters.',
+    'Had weekly meetings with my team where we gave our updates and future tasks to be done.'
 ]
 const emerald = [
-    'It is a project made by programmers with the main objective of developing pages, mobile applications and back end servers for the personal development of each member of the group. Where we have carried out projects mainly with React and React Native',
-    'I Developed a Bank Application with React Native using TypeScript and Expo.',
-    'I have designed the screens and user stories of the application and daily communication with the designers',
-    'I was technical support for my co-workers guiding them how to solve their problems in the front end section'
+    'Emerald was a project made by developers with the main objective of developing web pages, mobile applications and backend servers for the personal development of each member of the group. We have carried out projects mainly with React and React Native.',
+    'I worked on the development of a bank application with React Native using TypeScript and Expo.',
+    'I have designed the screens and user stories of the application and had daily communication with the designers.',
+    'I served as the technical support for my co-workers guiding them on how to solve their problems in the frontend section.'
 ]
 const TabJobs = () => {
     return (

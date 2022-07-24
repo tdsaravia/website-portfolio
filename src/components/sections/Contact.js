@@ -11,7 +11,7 @@ import { Container } from '../../GlobalStyle'
 const content = {
     question: 'Whats next?',
     title: 'Get in Touch',
-    p1: 'I am currently opening to hearing about new opportunities! Whether you just want to say, hello, or have a project, my inbox is always open!',
+    p1: 'I am currently open to hear about new opportunities! Whether you just want to say hello, or have a project, my inbox is always open!',
 }
 const Contact = () => {
 
