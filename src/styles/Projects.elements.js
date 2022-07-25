@@ -122,13 +122,14 @@ export const RightContainer = styled.div`
 }
 `
 
-export const Title = styled.p`
+export const Title = styled.a`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
     color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-end;
     padding: 20px 0px;
+    text-decoration:none
     @media screen and (max-width:768px) {
         font-size: 16px;
 
@@ -207,13 +208,14 @@ export const Icon = styled.img`
     cursor:pointer;
 `
 
-export const TitleReverse = styled.p`
+export const TitleReverse = styled.a`
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
     color: ${Colors.yellow};
     font-weight: 400;
     text-align:flex-start;
     padding: 20px 0px;
+    text-decoration:none
 
     @media screen and (max-width:768px) {
         font-size: 16px;

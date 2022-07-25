@@ -45,11 +45,13 @@ const Projects = () => {
 				<ContentRow>
 					<LeftContainer>
 						<ImageContainer>
+							<a href='https://github.com/tdsaravia/pictures-e-commerce'>
 							<Image src={project1} alt="e-commerce"/>
+							</a>
 						</ImageContainer>
 					</LeftContainer>
 					<RightContainer>
-						<Title>E-commerce Website</Title>
+						<Title href='https://github.com/tdsaravia/pictures-e-commerce'>E-commerce Website</Title>
 						<Box>
 							<Description>
 							An e-commerce for pictures. It’s a web app where you can filter and sort the images that you want, and add the pics to your cart to buy them.
@@ -63,7 +65,7 @@ const Projects = () => {
 							<Skills>SASS</Skills>
 						</SkillsContainer>
 						<IconContainer>
-							<a href='https://github.com/tobii-saravia/bejamas-task'>
+							<a href='https://github.com/tdsaravia/pictures-e-commerce'>
 								<Icon src={gh} alt="github-icon"/>
 							</a>
 						</IconContainer>
@@ -71,7 +73,7 @@ const Projects = () => {
 				</ContentRow>
 				<ContentRow>
 					<LeftContainer>
-						<TitleReverse>Weather Website</TitleReverse>
+						<TitleReverse href='https://github.com/tdsaravia/weather-app'>Weather Website</TitleReverse>
 						<Box>
 							<DescriptionReverse>
 									A weather app where you can find what the weather will be for the week for a given city.
@@ -84,27 +86,30 @@ const Projects = () => {
 
 						</SkillsContainerReverse>
 						<IconContainer>
-							<a href='https://github.com/tobii-saravia/weather-app'>
+							<a href='https://github.com/tdsaravia/weather-app'>
 								<Icon src={gh} alt="github-icon"/>
 							</a>
 						</IconContainer>
 					</LeftContainer>
 					<RightContainer>
 						<ImageContainer>
+						<a href='https://github.com/tdsaravia/weather-app'>
 							<Image src={project2} alt="weather"/>
+						</a>
 						</ImageContainer>
 					</RightContainer>
 				</ContentRow>
 				<ContentRow>
 				<LeftContainer>
 					<ImageContainer>
+						<a href='https://github.com/tdsaravia/tobi-shop'>
 						<Image src={project3} alt="e-commerce"/>
 						<CoomingSoon>Cooming Soon!</CoomingSoon>
-
+						</a>
 					</ImageContainer>
 				</LeftContainer>
 				<RightContainer>
-					<Title>E-commerce Design</Title>
+					<Title href='https://github.com/tdsaravia/tobi-shop'>E-commerce Design</Title>
 					<Box>
 						<Description>
 							This is a design for desktop. It is the frontend for an e-commerce, where you can use a carrousel, add objects to the cart and see the cart’s details.
@@ -117,7 +122,7 @@ const Projects = () => {
 						<Skills>React Slick</Skills>
 					</SkillsContainer>
 					<IconContainer>
-						<a href='https://github.com/tobii-saravia/tobi-shop'>
+						<a href='https://github.com/tdsaravia/tobi-shop'>
 							<Icon src={gh} alt="github-icon"/>
 						</a>
 					</IconContainer>
