@@ -40,9 +40,10 @@ const Social = ({children}) => {
           height: 20px;
           margin-bottom:20px;
           background-color: transparent;
+          transition: 0.2s ease-in;
             &:hover,
             &:focus {
-            transform: translateY(-3px);
+            transform: translateY(-6px);
             }
         }
       }
@@ -75,11 +76,12 @@ a {
   writing-mode: vertical-rl;
   color:${Colors.grey};
   background-color: transparent;
+  transition: 0.2s ease-in;
 
   &:hover,
   &:focus {
-    transform: translateY(-3px);
-    color: ${Colors.yellow}
+    transform: translateY(-6px);
+    color: ${Colors.yellow};
   }
 }
 `;
@@ -89,7 +91,7 @@ a {
     <Side orientation="left">
         <StyledSocialList>
             <li>
-                <a href='https://www.instagram.com/tobiisaravia/' target="_blank" rel="noreferrer">
+                <a href='https://www.instagram.com/tcoder10/' target="_blank" rel="noreferrer">
                     <img src={Ig} alt='icon'/>
                 </a>
             </li>

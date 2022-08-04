@@ -163,6 +163,7 @@ export const Description = styled.p`
     background-color: #373737;
     @media screen and (max-width:768px) {
         font-size: 16px;
+        text-align: left;
 
     }
 `

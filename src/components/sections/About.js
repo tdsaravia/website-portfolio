@@ -13,6 +13,7 @@ import {
 import Profile from '../../images/profile.svg'
 import { useNav } from '../hooks/useNav'
 import { Container } from '../../GlobalStyle'
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -39,20 +40,27 @@ const About = () => {
             </TopContent>
             <ContentRow>
                 <ContentColumn>
+                <Fade left delay={4}>
                     <Paragraph>
                         {content.p1}
                     </Paragraph>
+                </Fade>
+                <Fade left delay={8}>
                     <Paragraph>
                         {content.p2}
                     </Paragraph>
+                </Fade>
+                
                     <List>
-                        {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+                        {skills && skills.map((skill, i) => <Fade bottom><li key={i}>{skill}</li></Fade>)}
                     </List>
                 </ContentColumn>
                 <ContentColumn>
+                    <Fade right delay={4}>
                     <ImageContainer>
                     <Image src={Profile} alt="profile"/>
                     </ImageContainer>
+                    </Fade>
                 </ContentColumn>
             </ContentRow>
         </Container>

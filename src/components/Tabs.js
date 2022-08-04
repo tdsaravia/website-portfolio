@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import '../styles/tabs.css'
+import Fade from 'react-reveal/Fade';
 
 
 const remigo = [
@@ -24,6 +25,7 @@ const emerald = [
 const TabJobs = () => {
     return (
         <div>
+        <Fade bottom>
         <Tabs>
         <TabList>
           <Tab>
@@ -72,7 +74,8 @@ const TabJobs = () => {
           </div>
         </TabPanel>
       </Tabs>
-        </div>
+      </Fade>
+    </div>
     )
 }
 
