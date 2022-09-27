@@ -39,7 +39,7 @@ const Navbar = () => {
             ))}
             <MenuItem>
                 <Button>
-                  <a href="https://drive.google.com/file/d/10Z4M_mDRPIpZ6H-HN5DMVnudKfTxvue2/view?usp=sharing" rel="noreferrer" target="_blank">
+                  <a href="https://drive.google.com/file/d/1jr41K56twVtoeIj75MZk_-RO0fG7PhJ2/view?usp=sharing" rel="noreferrer" target="_blank">
                     Resume
                   </a>
                 </Button>
