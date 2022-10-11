@@ -7,8 +7,8 @@ const Seo = () => {
 
 
   const title = 'Tobias Saravia'
-  const description = 'Jr. Software Engineer'
-  const url = 'https://www.google.com/';
+  const description = 'Software Engineer'
+  const url = 'https://tdsaravia.github.io/';
 
   return (
     <Helmet>

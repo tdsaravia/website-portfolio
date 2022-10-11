@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 const remigo = [
     'Remigo is a Real Estate startup whose main mission was to facilitate communication between the buyer and the REALTOR through a live chat. It also facilitates the search for properties according to what the client wants thanks to the MLS data search that it offers, where all the data of the properties found in Austin, TX are displayed.',
     'I developed a landing page with React (by using Gatsby). I also implemented new features and worked on fixing bugs for the main website.',
-    'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.',
+    'Manually tested the WebApp in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.',
     'Worked with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Gatsby, React, Next.js, Terraform, GraphQL, Figma, and Netlify.',
 ]
 const hokali = [
@@ -45,7 +45,7 @@ const TabJobs = () => {
             <div className="title">
             <h2>Jr. Software Engineer <span>Remigo, LLC</span></h2>
             </div>
-            <p className="date">Aug 2021 - Jun 2022 (Remote)</p>
+            <p className="date">Aug 2021 - Aug 2022 (Remote)</p>
             <div className="list-tab">
                 {remigo && remigo.map((paragraph, i) => <li key={i}>{paragraph}</li>)}
             </div>
@@ -54,7 +54,7 @@ const TabJobs = () => {
         <TabPanel>
           <div className="panel-content">
             <div className="title">
-            <h2>Jr. Web Developer <span>HOKALI</span></h2>
+            <h2>Web Developer <span>HOKALI</span></h2>
             </div>
             <p className="date">Jan 2021 - Jun 2021 (Remote)</p>
             <div className="list-tab">
